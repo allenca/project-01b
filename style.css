@@ -1,0 +1,196 @@
+/* text styling */
+
+.raleway {
+  font-family: "raleway";
+}
+
+.playfair {
+  font-family: "playfair";
+}
+
+.bold {
+  font-weight: 700;
+} 
+
+.italic {
+  font-style: italic;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-grey {
+  color: grey;
+}
+
+.text-shadow {
+  text-shadow: 4px 2px 4px gray;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.item {text-align: center;
+}
+
+span {
+  font-style: normal;
+  font-weight: bold;
+  font-family: "playfair";
+}
+
+/* padding style rules */
+
+.pad-top-40 {
+  padding: 40vh 0vh 0vh 0vh;
+}
+
+.pad-top-25 {
+  padding: 25vh 0vh 0vh 0vh;
+}
+
+.pad-top-2 {
+  padding: 2vh 0vh 0vh 0vh; 
+}
+
+.pad-bottom-5 {
+  padding-bottom: 5vh;
+}
+
+/* product rules */
+
+.inline {
+  display: inline-block;
+}
+
+.item-width-25 {
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+
+/* container for floats instead of clearfix; clearfix might cause styles to render incorrectly */
+
+.float-container:before,
+.float-container:after {
+  content: "";
+  display: table;
+}
+
+.float-container:after {
+  clear: both;
+}
+
+.float-container {
+  clear: both;
+  zoom: 100%;
+}
+
+/* container for sections */
+
+.section-container {
+   padding: 0 2%;
+   margin: 0 auto;
+   max-width: 1240px;
+   width: 100%;
+}
+
+/* header images */
+
+.logo {
+  float: left;
+  width: 25vh;
+  padding-left: 3vh;
+  padding-top: 1.5vh;
+  padding-bottom: 2.5vh;
+}
+
+.cart {
+  float: right;
+  width: 9vh;
+  padding-right: 3vh;
+  padding-top: 1.5vh; 
+}
+
+/* code for flower background and model in banner */
+
+.banner {
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.3) 100%, transparent), url("assets/images/flower-bkgd.jpg");
+  background-size: 100% 100%;
+  position: relative;
+  background-position: center; 
+  min-height: 73vh;
+  bottom: 0;
+  clear:both;
+  z-index: 1;
+ }
+
+.model {
+  background: url("assets/images/banner-girl.png");
+	background-size: contain;
+	background-repeat: no-repeat; 
+  background-position: center bottom;
+	position: absolute;
+  bottom: 0; 
+	left: 50%;
+	width: 20%;
+	height: 90%;
+	margin-left: -10%;
+  filter: brightness(80%);
+}
+
+h1 {
+  font-size: 5vh;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 10vh;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.h3-text {
+  font-size: 2.5rem;
+  line-height: 250%;
+  padding: 3% 0% 0%;
+  margin-bottom: 2%;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+  size: 1%;
+  color: grey;
+}
+
+.subscribe {
+  background: url("assets/images/wave-bkgd.jpg");
+  background-size: cover;
+  background-position: bottom;
+  min-height: 0vh;
+  bottom: 0;
+  width: 100%;
+  clear:both;
+}
+
+.info {
+  background-color: black;
+  clear: both;
+}
+
+
+/* make site responsive for iphone mobile 
+-webkit-appearance: none;
+*/
