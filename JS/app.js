@@ -24,5 +24,6 @@ $(document).ready(function(){
    $("#cartQty").show();
 })
   //shows the increase in counter per click on add to cart
-
 });
+
+
