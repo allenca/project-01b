@@ -47,6 +47,14 @@ span {
   margin: 0 auto;
 }
 
+.font-Playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-Raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
 .h3-text {
   font-family: "Playfair Display", serif;
   font-size: 3.5rem;
