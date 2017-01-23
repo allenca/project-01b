@@ -67,7 +67,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: space-between;
   background-color: white;
   width: 100%;
   padding-top: 1rem;
@@ -369,6 +369,9 @@ hr {
 
 /* footer styling */
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
   background-color: black;
   color: white;
   min-height: 30vh;
