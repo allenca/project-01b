@@ -1,5 +1,4 @@
 /* document-wide styling */
-
 * {
   box-sizing: border-box;
   outline: none;
@@ -26,27 +25,14 @@ hr {
   color: grey;
 }
 
-/* container for floats instead of clearfix; clearfix might cause styles to render incorrectly */
-.float-container: before,
-.float-container: after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.float-container {
-  clear: both;
-  zoom: 100%;
+.clearfix:before,
+.clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
 }
 
 /* container for sections */
-.container {
-  max-width: 1240px;
-  width: 100%;
-  padding: 0 3%;
-  margin: 0 auto;
-}
-
 .container {
   width: 100%;
   padding: 0 3%;
@@ -144,11 +130,13 @@ hr {
   text-align: center;
   padding-top: 1rem;
   border-top: 1px solid #7d7d7d;
+  font-family: "Raleway";
 }
 
 .navbar li {
   display: inline-block;
   text-transform: uppercase;
+  font-family: "Raleway";
 }
 
 .navbar a {
@@ -178,8 +166,8 @@ hr {
   justify-content: center;
   align-items: center;
   background: linear-gradient(rgba(0,0,0,0.5),transparent), 
-  url("assets/images/banner-girl.png") center bottom no-repeat,
-  url("assets/images/flower-bkgd.jpg") center repeat-x;
+  url("../assets/images/banner-girl.png") center bottom no-repeat,
+  url("../assets/images/flower-bkgd.jpg") center repeat-x;
   background-size: cover, 26vh 56vh, cover;
   position: relative;
   min-height: 80vh;
@@ -235,14 +223,13 @@ hr {
   flex: 1 0 50%;
     max-width: 50%;
     border: 4px solid white;
-   /* position: relative;*/
 }
 
 .category-name {
   color: white;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   text-shadow: 2px 2px 4px black;
   font-size: 2rem;
   min-height: 25vh;
@@ -252,37 +239,37 @@ hr {
 
 .wide.mens {
   background: linear-gradient(rgba(0,0,0,0.5),transparent),
-    url("assets/images/mens-category.jpg") no-repeat center center;
+    url("../assets/images/mens-category.jpg") no-repeat center center;
   background-size: cover;     
 }
 
 .square.trends {
   background:linear-gradient(rgba(0,0,0,0.5),transparent),
-    url("assets/images/trends-category.jpg") no-repeat center center;
+    url("../assets/images/trends-category.jpg") no-repeat center center;
   background-size: cover;     
 }
 
 .square.glasses {
   background:linear-gradient(rgba(0,0,0,0.5),transparent),
-    url("assets/images/glasses-category.jpg") no-repeat center center;
+    url("../assets/images/glasses-category.jpg") no-repeat center center;
   background-size: cover; 
 }
 
 .square.sale {
   background:linear-gradient(rgba(0,0,0,0.5),transparent),
-    url("assets/images/sale-category.jpg") no-repeat center center;
+    url("../assets/images/sale-category.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .square.bags {
   background:linear-gradient(rgba(0,0,0,0.5),transparent),
-    url("assets/images/bags-category.jpg") no-repeat center center;
+    url("../assets/images/bags-category.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .wide.womens {
   background:linear-gradient(rgba(0,0,0,0.5),transparent),
-    url("assets/images/womens-category.jpg") no-repeat center center;
+    url("../assets/images/womens-category.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -297,20 +284,24 @@ hr {
   font-size: 2.3rem;
   color:#ff4040;
   line-height: 1.5;
-  font-family: 'Playfair display', serif;
+  font-family: "Playfair display", serif;
 }
 
 .item h1 {
   font-size: 1rem;
   color: #969696;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .item p {
    color: #969696;
    font-size: 1.2rem;
    font-weight: bold;
-   font-family: 'Raleway', sans-serif;
+   font-family: "Raleway", sans-serif;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  display: none !important;
 }
 
 .addtocart {
@@ -329,7 +320,7 @@ hr {
   flex-wrap: wrap;
   flex-flow: row;
   background: linear-gradient(rgba(0,0,0,0.3),transparent),
-    url("assets/images/wave-bkgd.jpg") center bottom no-repeat;
+    url("../assets/images/wave-bkgd.jpg") center bottom no-repeat;
   min-height: 40vh;
   padding-bottom: 4rem;
 }
@@ -591,7 +582,9 @@ li {
 }
 
 .banner {
-  background: linear-gradient(rgba(0,0,0,0.5),transparent), url("assets/images/banner-girl.png") center bottom no-repeat, url("assets/images/flower-bkgd.jpg") center repeat-x;
+  background: linear-gradient(rgba(0,0,0,0.5),transparent), 
+  url("../assets/images/banner-girl.png") center bottom no-repeat, 
+  url("../assets/images/flower-bkgd.jpg") center repeat-x;
   background-size: cover, 36vh 80vh, cover;
   min-height: 110vh;
 }
@@ -599,6 +592,7 @@ li {
 .banner-h1 {
   font-size: 2.7rem;
 }
+
 .banner-h2 {
   font-size: 7.6rem;
 }
@@ -662,4 +656,9 @@ li {
 .social { 
   padding-right: 4rem;
 }
+
+.h3-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
