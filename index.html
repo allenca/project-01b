@@ -10,23 +10,22 @@
     <!-- links to Google Fonts for styling the text -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,500,500i" rel="stylesheet">
-    
-    <!-- Bootstrap link for social media list icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+        
     <!-- link to make the webpage responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap link for social media list icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
     <main>
       
       <!-- header section with logo, cart, and navbar -->
-      <header>
-        <section class="header float-container">
-          <img class="logo" src="assets/images/aloha-logo.svg" alt="Aloha Logo"/>
-          <img class="cart" src="assets/images/cart-icon.svg" alt="Cart"/>
-        </section>
+      <header class="header">
+        <div class="logo">
+          <img src="assets/images/aloha-logo.svg" alt="logo">
+        </div> 
     
         <nav class= "navbar">
           <ul>
@@ -36,7 +35,11 @@
             <li><a href="#">Updates</a></li>
           </ul>
         </nav>  
-
+        
+         <div class= "cart">
+            <img src="assets/images/cart-icon.svg" alt="cart icon">
+            <input id="cartQty" type="text" name="cartQuantity" value="0">
+        </div> 
       </header>
 
     <!-- banner with announcements -->
@@ -101,16 +104,16 @@
 
         <!-- subscribe option for users to input their emails -->
         <section class="subscribe">
-          <h3 class="h3-text text-white text-center">Sign-Up for<span> Updates</span></h3>
-            <p class="text-white text-center">Stay updated on our latest product releases, be first to find out about upcoming</p>
-            <p class="text-white text-center"> sales, and get free style tips from our blog. Unsubscribe at anytime.</p>
-            <div class="email">
-              <input type="email" placeholder="Your Email">
-              <input type="submit">Subscribe
-            </div>
-        </section>
-        </div>
-      </section>
+          <div class="container">
+            <h3 class="h3-text"> Sign-Up for <span>Updates</span></h3>
+          <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at anytime.</p>
+
+          <div class="sub-Form">
+              <input class="email floatL border-none" type="text" placeholder="Your Email">
+              <input class="submitButton" type="submit" value="Subscribe">
+          </div>
+        </div>           
+    </section>
 
       </main>
     </body>
